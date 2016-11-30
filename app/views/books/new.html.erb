@@ -1,0 +1,16 @@
+<div id="blocnew">
+<div id="blocnewbook">
+
+<h1>Nouveau livre</h1>
+
+<%= form_for(@book) do |b| %>
+
+	<p><%= b.file_field :couverture %> </p>
+    <p><%= b.text_field :titre %></p>
+    <p><%= b.text_field :description %></p>
+    <%= b.submit "Créer" %>
+
+    <% end %>
+</div>
+<p id="lienretour"><%= link_to 'Retour', books_path %></p>
+</div>

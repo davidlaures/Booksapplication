@@ -1,0 +1,22 @@
+<h1> Bibliothèque </h1>
+<div id="tableau">
+<table>
+<!-- <tr><th>Couverture</th><th>Titre</th><th>Description</th><th>Liens</th></tr> -->
+<% @books.each do |b| %>
+      <!--
+      To do: Loop through tags and display each one with this HTML -->
+      <tr>
+        <td> <%= image_tag b.couverture.url %> </td>
+        <td> <%= b.titre %> </td>
+        <td> <%= b.description %> </td>
+       <td> <%= link_to "En savoir plus", book_path(b) %>
+        <%= link_to 'Supprimer', book_path(b), method: :delete, data: { confirm: 'Etes-vous certain ?' } %>
+      </td>
+</tr>
+      <% end %>
+            
+      </table>
+      <p id="lienajout"><%= link_to "Ajouter un livre", books_new_path %></p>
+      </div>
+
+      </p>

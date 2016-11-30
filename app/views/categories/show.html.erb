@@ -1,0 +1,18 @@
+<h2><%= @category.titre %> </h2>
+<%= @category.description %>
+
+    <div>
+		<% @books.each do |b| %>
+      <!--
+      To do: Loop through destinations and display each one with this HTML -->
+      <div>
+        <%= image_tag b.couverture.url %>
+        <%= b.couverture %>
+        <h2> <%= b.titre %> </h2>
+        <p> <%= b.description %> </p>
+        <%= link_to "See more", book_path(b) %>
+      </div>
+      <% end %>
+
+      <%= link_to "Edit", edit_category_path(@category) %>
+    <%= link_to "Back", categories_path%>

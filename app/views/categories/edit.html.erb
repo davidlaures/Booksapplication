@@ -1,0 +1,6 @@
+    <!-- Your code here -->
+		<%= form_for(@category) do |c| %> 
+    <%= c.text_field :titre %>
+    <%= c.text_field :description %>
+    <%= c.submit "Update" %>
+    <% end %>

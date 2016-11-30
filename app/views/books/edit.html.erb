@@ -1,0 +1,12 @@
+<div id="blocedit">
+
+<h1>Modifier un livre</h1>
+
+	<%= form_for(@book) do |b| %>
+	<p><%= b.file_field :couverture %></p> 
+    <p><%= b.text_field :titre %></p>
+    <p><%= b.text_field :description %></p>
+    <%= b.submit "Update" %>
+    <% end %>
+
+   </div>

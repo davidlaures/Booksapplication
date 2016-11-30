@@ -1,0 +1,175 @@
+// Place all the styles related to the Books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* 
+--------------------------------
+INDEX BOOKS
+--------------------------------
+*/
+
+body {
+	background-color: #34495e;
+	color: #2c3e50;
+}
+
+h1 {
+	text-align:center;
+	color: #ecf0f1;
+}
+
+#lienajout, #lienretour  {
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 8px;
+	width: 180px;
+	border: solid 1px;	
+	cursor: pointer;
+	border-color: #ecf0f1;
+}
+
+#lienajout a, #lienretour a {
+	color: #ecf0f1;
+}
+
+#lienajout:hover, #lienretour:hover {
+	background-color: #2c3e50;
+	color: #34495e;
+}
+
+
+table {
+	border: solid 1px;
+	overflow: hidden;
+	border-radius: 10px;
+	margin: auto;
+	width: 800px;
+	background-color: #ecf0f1;
+}
+
+table a {
+	color: #34495e;
+}
+
+td {
+	text-align: center;
+}
+
+td img {
+	width: 80px;
+	height: 100px;
+	margin-top: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* 
+--------------------------------
+NEW BOOK
+--------------------------------
+*/
+
+#blocnew{
+	margin-top: 60px;
+}
+
+#blocnewbook {
+	width: 430px;
+	height: 480px;
+	border: solid 1px;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #ecf0f1;
+	color: #2c3e50;
+}
+
+#blocnewbook h1{
+	color: #2c3e50;
+}
+
+#blocnewbook input {
+	margin-top: 40px;
+}
+
+#blocnewbook input[type=submit] {
+	margin-top: 50px;
+}
+/*
+--------------------------------
+SHOW BOOK
+--------------------------------
+*/
+
+#blocshow {
+	width: 430px;
+	height: 480px;
+	border: solid 1px;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #ecf0f1;
+	color: #2c3e50;
+	margin-top: 60px;
+}
+
+#blocshow h1 {
+	color: #2c3e50;
+}
+
+.liensmodif {
+	margin-top: 45px;
+	display: inline-block;
+}
+
+.liensmodif a{
+	color: #2c3e50;
+}
+
+#blocshow img{
+	width: 160px;
+	height: 200px;
+}
+
+.divshow {
+	border-bottom: solid 1px;
+}
+
+.divshow p{
+	display: inline-block;
+}
+
+/*
+----------------------------------
+EDIT BOOK
+----------------------------------
+*/
+
+#blocedit {
+	width: 430px;
+	height: 480px;
+	border: solid 1px;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #ecf0f1;
+	color: #2c3e50;
+	margin-top: 60px;
+}
+
+#blocedit h1{
+	color: #2c3e50;
+}
+
+#blocedit input {
+	margin-top: 40px;
+}
+
+#blocedit input[type=submit] {
+	margin-top: 50px;
+}

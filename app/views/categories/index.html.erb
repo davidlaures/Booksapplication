@@ -1,0 +1,12 @@
+<% @categories.each do |c| %>
+      <!--
+      To do: Loop through tags and display each one with this HTML -->
+      <div>
+        <h2><%= c.titre %></h2>
+        <%= c.description %>
+        <%= link_to "Learn more", category_path(c) %>
+        <%= link_to 'Destroy', category_path(c), method: :delete, data: { confirm: 'Are you sure?' } %> </br>
+      </div>
+      <% end %>
+
+      <p><%= link_to "New category", categories_new_path %></p>

@@ -1,0 +1,8 @@
+<div id="blocshow">
+	<h1> <%= @book.titre %> </h1>
+    <div class="divshow"><p><%= image_tag @book.couverture.url %></p></div>
+    <div class="divshow"><p><%= @book.description %></p></div>
+
+    <p class="liensmodif"><%= link_to "Modifier", edit_book_path(@book) %></p>
+    <p class="liensmodif"><%= link_to "Retour", books_path%></p>
+</div>
